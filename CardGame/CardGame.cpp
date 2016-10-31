@@ -11,6 +11,7 @@ int main()
 	Card Ace(card::ACE, card::HEARTS, 1);
 	Card Jack(card::JACK, card::DIAMONDS, 11);
 	Card King(card::KING, card::SPADES, 13);
+	Card Queen(card::QUEEN, card::CLUBS, 12);
 	//std::cout << Ace.toString();
 	std::cout << std::endl;
 	//std::cout << Ace;
@@ -18,9 +19,11 @@ int main()
 	myStack.push(Ace);
 	myStack.push(Jack);
 	myStack.push(King);
+	myStack.push(Queen);
 	
 	try 
 	{
+		std::cout << myStack.pop() << std::endl;
 		std::cout << myStack.pop() << std::endl;
 		std::cout << myStack.pop() << std::endl;
 		//std::cout << myStack.pop() << std::endl;

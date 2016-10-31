@@ -11,6 +11,13 @@ Stack::Stack()
 
 Stack::~Stack()
 {
+	while (size != -1)
+	{
+		node*tempdel = current->prev;
+		delete current;
+		current = tempdel;
+		size--;
+	}
 }
 
 void Stack::push(Card card)
